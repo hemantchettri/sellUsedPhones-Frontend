@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Images/login.jpeg);
+    height: 100vh;
+    background-size: cover;
+    height: auto;
+    background-size: 100% 125%;
+    font-family: sans-serif;
+}
+
+.row.justify-content-around {
+    width: 70vw;
+}
+
+.container>.row.justify-content-center {
+    height: 80vh;
+}
+
+.font-dancing {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+
+.border-rounded {
+    width: 300px;
+    height: 35px;
+    border-radius: 10px !important;
+    border: none;
+}
+
+.btn-width-login {
+    width: 15vw;
+}

@@ -1,0 +1,133 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.row.justify-content-around {
+    width: 69vw;
+}
+
+#sell-whole-section {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+#sell {
+    margin-left: 6%;
+}
+
+#text {
+    float: right;
+    margin-top: 10%;
+    margin-left: 5%;
+    font-size: 18;
+}
+
+.mid-part {
+    background-color: #E6EAED;
+}
+
+#cardimg {
+    margin-left: 10%;
+    margin-top: 9px;
+}
+
+#cardheader {
+    margin-left: 9%;
+    margin-top: 1%;
+    font-size: 32;
+}
+
+#card-body {
+    text-align: center;
+    margin-left: 4%;
+    font-size: 22;
+    margin-top: 10%;
+}
+
+#howitworks-section {
+    margin-top: 5%;
+}
+
+.info {
+    padding: 10%;
+    margin-top: 60%;
+}
+
+#info-we-come {
+    margin-top: 20%;
+}
+
+.card-text {
+    font-size: 20px !important;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: none;
+}
+
+.sellphones-section {
+
+    animation: fromLeft;
+    animation-duration: 1s;
+
+}
+
+#overview1 {
+
+    animation: fromLeft;
+    animation-duration: 1s;
+
+}
+
+@keyframes fromLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+}
+
+.overview2 {
+
+    animation: fromRight;
+    animation-duration: 1s;
+
+}
+
+@keyframes fromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+.item-img {
+    transition: all 1s ease;
+    border: none;
+}
+
+.item-img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
