@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../css/loginSignup.css'
+// import '../css/loginSignup.css'
 import axios from "axios";
 
 export default class Login extends React.Component {
@@ -23,20 +23,15 @@ export default class Login extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
+        this.setState({ loading: true });
         axios.post("/api/login", { email: this.state.email, password: this.state.password })
-            .then(res => {
-                localStorage.setItem("token", res.data.token);
-                if (res.data.error) {
-                    this.setState({
-                        error: res.data.error,
-                        loading: false
-                    })
-                } else {
-                    this.setState({
-                        error: "",
-                        loading: false
-                    })
+            .then(data => {
+                var _tmp = data.data;
+                if (_tmp.success === true) {
+                    localStorage.setItem("token", _tmp.token);
                     this.props.history.push("/homepage");
+                } else {
+                    this.setState({ error: _tmp.message.split(":"), loading: false });
                 }
             }
             )
@@ -46,13 +41,12 @@ export default class Login extends React.Component {
         return (
             <div className="main">
                 <section className="sign-in">
-                    <div className="container">
+                    <div className="container2">
                         <div className="signin-content">
                             <div className="signin-image">
                                 <figure><img src="images/signin-image.jpg" alt="log in" /></figure>
                                 <Link to="/register" className="signup-image-link">Create an account</Link>
                             </div>
-
                             <div className="signin-form">
                                 <h2 className="form-title">Log In</h2>
                                 <form method="POST" className="register-form" id="login-form" onSubmit={this.handleSubmit}>

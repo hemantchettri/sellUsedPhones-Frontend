@@ -23,9 +23,7 @@ export default class Register extends React.Component{
 
     handleSubmit = (e) => {
         e.preventDefault();
-        this.setState({
-            loading: true
-        })
+        this.setState({ loading: true })
         const { username, email, password } = this.state;
         axios.post("/api/register", { username, email, password })
             .then(res => {
@@ -48,7 +46,7 @@ export default class Register extends React.Component{
         return(
             <div className="main">
                 <section className="signup">
-                    <div className="container">
+                    <div className="container2">
                         <div className="signup-content">
                             <div className="signup-form">
                                 <h2 className="form-title">Sign up</h2>

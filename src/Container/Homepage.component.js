@@ -5,9 +5,9 @@ import '../css/sellUsedPhones.css'
 export default class Homepage extends React.Component {
     render() {
 
-        if (!localStorage.getItem("token")) {
-            this.props.history.push("/");
-        }
+        // if (!localStorage.getItem("token")) {
+        //     this.props.history.push("/");
+        // }
 
         return (
             <>
@@ -99,8 +99,13 @@ export default class Homepage extends React.Component {
                     <div className="container">
                         <div className="row text-center">
                             <div className="col-md-6 col-lg-4">
-                                <Link to="#"> <img style={{ width: "300px", height: "300px" }} src=""
-                                    className="img-fluid img-thumbnail item-img" alt="" /></Link>
+                                <Link to="#"> <img style={{ width: "300px", height: "300px" }} src="./images/sell_iphone.jpg" className="img-fluid img-thumbnail item-img" alt="" /> </Link>
+                            </div>
+                            <div className="col-md-6 col-lg-4">
+                                <Link to="#"> <img style={{ width: "300px", height: "300px" }} src="./images/sell_samsung.jpg" className="img-fluid img-thumbnail item-img" alt="" /> </Link>
+                            </div>
+                            <div className="col-md-6 col-lg-4">
+                                <Link to="#"> <img style={{ width: "300px", height: "300px" }} src="./images/sell_lg-phone.jpg" className="img-fluid img-thumbnail item-img" alt="" /> </Link>
                             </div>
                         </div>
                     </div>

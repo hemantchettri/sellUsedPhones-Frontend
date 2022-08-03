@@ -8,7 +8,7 @@ export default class Header extends React.Component {
                 <div className="row">
                     <div className="col">
                         <nav className="navbar navbar-light bg-white navbar-expand-lg">
-                            <Link className="navbar-brand" to="">
+                            <Link className="navbar-brand" to="/homepage">
                                 <img src="./images/sellusedphone.png" alt="sell used phone logo" width="250" height="138" />
                             </Link>
                             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -21,22 +21,16 @@ export default class Header extends React.Component {
                                         <div className="collapse navbar-collapse" id="navbarCollapse">
                                             <ul className="navbar-nav">
                                                 <li className="nav-item">
-                                                    <Link style={{ color: "#D62226", fontSize: "15px" }} className="nav-link"
-                                                        to="#overview"><strong>Overview</strong></Link>
+                                                    <Link style={{ color: "#D62226", fontSize: "15px" }} className="nav-link" to="/phones"><strong>Phones</strong></Link>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <Link style={{ color: "#D62226", fontSize: "15px" }} className="nav-link" to="#howitworks-section"><strong>How
-                                                        it
-                                                        works?</strong></Link>
+                                                    <Link style={{ color: "#D62226", fontSize: "15px" }} className="nav-link" to="#howitworks-section"><strong>How it works?</strong></Link>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <Link style={{ color: "#D62226", fontSize: "15px" }} className="nav-link" to="#sellphone-section"><strong>Sell
-                                                        your
-                                                        phone</strong></Link>
+                                                    <Link style={{ color: "#D62226", fontSize: "15px" }} className="nav-link" to="#sellphone-section"><strong>Sell your phone</strong></Link>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <Link style={{ color: "#D62226", fontSize: "15px" }} className="nav-link" to="#getintouch"><strong>Get in
-                                                        Touch</strong></Link>
+                                                    <Link style={{ color: "#D62226", fontSize: "15px" }} className="nav-link" to="#getintouch"><strong>Get in Touch</strong></Link>
                                                 </li>
                                             </ul>
                                         </div>
