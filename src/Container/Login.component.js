@@ -29,6 +29,7 @@ export default class Login extends React.Component {
                 var _tmp = data.data;
                 if (_tmp.success === true) {
                     localStorage.setItem("token", _tmp.token);
+                    localStorage.setItem("userId", _tmp.data._id);
                     this.props.history.push("/homepage");
                 } else {
                     this.setState({ error: _tmp.message.split(":"), loading: false });
